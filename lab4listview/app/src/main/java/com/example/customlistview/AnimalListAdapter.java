@@ -29,10 +29,8 @@ public class AnimalListAdapter  extends ArrayAdapter {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-
         LayoutInflater inflater = context.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.listview_row, null, true);
-
         TextView nev = rowView.findViewById(R.id.nev);
         TextView leiras = rowView.findViewById(R.id.leiras);
         ImageView kep = rowView.findViewById(R.id.kep);

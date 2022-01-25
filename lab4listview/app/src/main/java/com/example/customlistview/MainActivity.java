@@ -43,16 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
         AnimalListAdapter adapter = new AnimalListAdapter(this,nameArray,infoArray,imageArray);
         lista.setAdapter(adapter);
-
         lista.setOnItemClickListener((adapterView, view, position, id) -> {
-
             Toast.makeText(MainActivity.this, infoArray[position], Toast.LENGTH_SHORT).show();
         });
 
         gomb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(getBaseContext(), MainActivity2.class);
                 startActivity(intent);
             }
         });
